@@ -11,11 +11,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HelloWorldApplication {
 
     public static void main(final String[] args) throws Exception {
-//        String value = System.getenv("PORT");
-//        if (value == null) {
-//            System.out.println("error: PORT environment variable not set");
-//            System.exit(1);
-//        }
+        String value = System.getenv("PORT");
+        if (value == null) {
+            System.out.println("error: PORT environment variable not set");
+            System.exit(1);
+        }
         SpringApplication.run(HelloWorldApplication.class, args);
     }
 }
